@@ -1,0 +1,170 @@
+[
+  {
+    "diagnosis": "viral fever",
+    "standard_medicines": ["paracetamol", "ibuprofen", "antihistamine", "ORS", "vitamin C"],
+    "standard_tests": ["CBC", "complete blood count", "dengue test", "malaria test"],
+    "notes": "Common acute illness. Consultation + antipyretics typically sufficient. Tests warranted if fever persists > 3 days."
+  },
+  {
+    "diagnosis": "bacterial infection",
+    "standard_medicines": ["amoxicillin", "azithromycin", "ciprofloxacin", "cephalexin", "paracetamol"],
+    "standard_tests": ["CBC", "urine culture", "throat swab", "blood culture"],
+    "notes": "Antibiotics appropriate. Broad-spectrum only if culture unavailable."
+  },
+  {
+    "diagnosis": "hypertension",
+    "standard_medicines": ["amlodipine", "telmisartan", "losartan", "atenolol", "metoprolol", "hydrochlorothiazide"],
+    "standard_tests": ["ECG", "lipid profile", "kidney function test", "urine routine"],
+    "notes": "Chronic condition. 90-day waiting period applies."
+  },
+  {
+    "diagnosis": "type 2 diabetes",
+    "standard_medicines": ["metformin", "glipizide", "sitagliptin", "insulin", "glimepiride"],
+    "standard_tests": ["HbA1c", "fasting blood glucose", "postprandial glucose", "kidney function", "lipid profile"],
+    "notes": "Chronic condition. 90-day waiting period applies. Monitoring tests covered."
+  },
+  {
+    "diagnosis": "diabetic",
+    "standard_medicines": ["metformin", "glipizide", "sitagliptin", "insulin", "glimepiride"],
+    "standard_tests": ["HbA1c", "fasting blood glucose", "kidney function", "lipid profile"],
+    "notes": "Same as type 2 diabetes. 90-day waiting period applies."
+  },
+  {
+    "diagnosis": "dental caries",
+    "standard_medicines": ["analgesics", "antibiotics"],
+    "standard_tests": ["dental X-ray"],
+    "notes": "Dental coverage up to ₹10,000. Cosmetic procedures excluded."
+  },
+  {
+    "diagnosis": "root canal treatment",
+    "standard_medicines": ["antibiotics", "analgesics"],
+    "standard_tests": ["dental X-ray"],
+    "notes": "Covered under dental. Up to ₹10,000 sub-limit."
+  },
+  {
+    "diagnosis": "dental pain",
+    "standard_medicines": ["ibuprofen", "paracetamol", "antibiotics"],
+    "standard_tests": ["dental X-ray"],
+    "notes": "Covered under dental benefits."
+  },
+  {
+    "diagnosis": "knee pain",
+    "standard_medicines": ["diclofenac", "ibuprofen", "paracetamol", "muscle relaxants", "calcium"],
+    "standard_tests": ["X-ray knee", "MRI knee", "uric acid test"],
+    "notes": "MRI requires pre-authorisation. Conservative management first."
+  },
+  {
+    "diagnosis": "back pain",
+    "standard_medicines": ["ibuprofen", "diclofenac", "muscle relaxants", "vitamin D", "calcium"],
+    "standard_tests": ["X-ray spine", "MRI spine"],
+    "notes": "MRI requires pre-authorisation."
+  },
+  {
+    "diagnosis": "respiratory infection",
+    "standard_medicines": ["azithromycin", "amoxicillin", "salbutamol", "ipratropium", "cough syrup"],
+    "standard_tests": ["chest X-ray", "sputum culture", "CBC"],
+    "notes": "URTI or LRTI. Antibiotics if bacterial signs present."
+  },
+  {
+    "diagnosis": "urinary tract infection",
+    "standard_medicines": ["ciprofloxacin", "nitrofurantoin", "trimethoprim", "cranberry extract"],
+    "standard_tests": ["urine routine", "urine culture", "urine microscopy"],
+    "notes": "Antibiotics based on culture sensitivity."
+  },
+  {
+    "diagnosis": "allergic rhinitis",
+    "standard_medicines": ["cetirizine", "loratadine", "fexofenadine", "nasal steroids", "montelukast"],
+    "standard_tests": ["allergy test", "IgE levels"],
+    "notes": "Antihistamines are first line. Steroid sprays for persistent cases."
+  },
+  {
+    "diagnosis": "gastritis",
+    "standard_medicines": ["omeprazole", "pantoprazole", "ranitidine", "antacids", "sucralfate"],
+    "standard_tests": ["H. pylori test", "endoscopy", "stool antigen test"],
+    "notes": "Proton pump inhibitors are first line."
+  },
+  {
+    "diagnosis": "anxiety",
+    "standard_medicines": ["escitalopram", "alprazolam", "clonazepam", "buspirone"],
+    "standard_tests": ["thyroid function test"],
+    "notes": "Psychiatric consultation recommended for medication."
+  },
+  {
+    "diagnosis": "migraine",
+    "standard_medicines": ["sumatriptan", "propranolol", "topiramate", "amitriptyline", "ibuprofen"],
+    "standard_tests": ["MRI brain", "CT brain"],
+    "notes": "MRI/CT requires pre-authorisation."
+  },
+  {
+    "diagnosis": "conjunctivitis",
+    "standard_medicines": ["antibiotic eye drops", "antihistamine eye drops", "lubricant drops"],
+    "standard_tests": [],
+    "notes": "Covered under vision benefits."
+  },
+  {
+    "diagnosis": "myopia",
+    "standard_medicines": [],
+    "standard_tests": ["refraction test", "eye test"],
+    "notes": "Vision coverage ₹5,000. Glasses/contacts covered. LASIK excluded."
+  },
+  {
+    "diagnosis": "sprain",
+    "standard_medicines": ["ibuprofen", "diclofenac gel", "bandage"],
+    "standard_tests": ["X-ray"],
+    "notes": "OPD treatment. Ice, rest, NSAIDs standard."
+  },
+  {
+    "diagnosis": "panchakarma",
+    "standard_medicines": ["ayurvedic oils", "herbal medicines"],
+    "standard_tests": [],
+    "notes": "Covered under alternative medicine (Ayurveda). Sub-limit ₹8,000."
+  },
+  {
+    "diagnosis": "ayurveda",
+    "standard_medicines": ["herbal formulations"],
+    "standard_tests": [],
+    "notes": "Covered under alternative medicine. Up to 20 therapy sessions."
+  },
+  {
+    "diagnosis": "homeopathy",
+    "standard_medicines": ["homeopathic preparations"],
+    "standard_tests": [],
+    "notes": "Covered under alternative medicine. Sub-limit ₹8,000."
+  },
+  {
+    "diagnosis": "obesity",
+    "standard_medicines": [],
+    "standard_tests": [],
+    "notes": "Weight loss treatments are explicitly excluded from this policy."
+  },
+  {
+    "diagnosis": "cosmetic procedure",
+    "standard_medicines": [],
+    "standard_tests": [],
+    "notes": "Cosmetic procedures are explicitly excluded. Not covered."
+  },
+  {
+    "diagnosis": "infertility",
+    "standard_medicines": [],
+    "standard_tests": [],
+    "notes": "Infertility treatments are explicitly excluded from this policy."
+  },
+  {
+    "diagnosis": "anemia",
+    "standard_medicines": ["ferrous sulfate", "folic acid", "vitamin B12", "iron supplements"],
+    "standard_tests": ["CBC", "serum ferritin", "vitamin B12 levels"],
+    "notes": "Iron/B12 supplements covered when prescribed for deficiency."
+  },
+  {
+    "diagnosis": "thyroid disorder",
+    "standard_medicines": ["levothyroxine", "carbimazole", "propylthiouracil"],
+    "standard_tests": ["TSH", "T3", "T4", "thyroid ultrasound"],
+    "notes": "Covered under OPD consultations and diagnostics."
+  },
+  {
+    "diagnosis": "skin infection",
+    "standard_medicines": ["antibiotics", "antifungal cream", "corticosteroid cream"],
+    "standard_tests": ["skin scraping", "culture"],
+    "notes": "Topical and systemic antibiotics as appropriate."
+  }
+]

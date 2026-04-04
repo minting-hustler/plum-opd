@@ -1,0 +1,112 @@
+[
+  {
+    "id": "tc001",
+    "claim_type": "consultation",
+    "amount": 1500,
+    "diagnosis": "viral fever",
+    "hospital_name": "City Clinic",
+    "is_network": false,
+    "decision": "APPROVED",
+    "approved_amount": 1350,
+    "primary_reason": "Valid consultation with proper documentation. 10% co-pay applied."
+  },
+  {
+    "id": "tc002-partial",
+    "claim_type": "dental",
+    "amount": 8000,
+    "diagnosis": "root canal treatment",
+    "hospital_name": "SmileCare Dental",
+    "is_network": false,
+    "decision": "PARTIAL",
+    "approved_amount": 8000,
+    "primary_reason": "Root canal covered under dental benefits. Cosmetic whitening excluded."
+  },
+  {
+    "id": "tc003",
+    "claim_type": "consultation",
+    "amount": 7500,
+    "diagnosis": "general check-up",
+    "hospital_name": "Health First Clinic",
+    "is_network": false,
+    "decision": "REJECTED",
+    "approved_amount": 0,
+    "primary_reason": "Claim amount ₹7,500 exceeds per-claim limit of ₹5,000."
+  },
+  {
+    "id": "tc004",
+    "claim_type": "consultation",
+    "amount": 1000,
+    "diagnosis": "fever",
+    "hospital_name": "Local Clinic",
+    "is_network": false,
+    "decision": "REJECTED",
+    "approved_amount": 0,
+    "primary_reason": "Missing prescription with valid doctor registration number."
+  },
+  {
+    "id": "tc005",
+    "claim_type": "consultation",
+    "amount": 2000,
+    "diagnosis": "diabetes management",
+    "hospital_name": "Diabetes Care Center",
+    "is_network": false,
+    "decision": "REJECTED",
+    "approved_amount": 0,
+    "primary_reason": "90-day waiting period for diabetes not yet completed."
+  },
+  {
+    "id": "tc006",
+    "claim_type": "alternative",
+    "amount": 4000,
+    "diagnosis": "panchakarma ayurveda",
+    "hospital_name": "Ayurveda Wellness",
+    "is_network": false,
+    "decision": "APPROVED",
+    "approved_amount": 4000,
+    "primary_reason": "Ayurvedic treatment covered under alternative medicine benefit."
+  },
+  {
+    "id": "tc007",
+    "claim_type": "diagnostic",
+    "amount": 15000,
+    "diagnosis": "knee pain MRI",
+    "hospital_name": "Imaging Center",
+    "is_network": false,
+    "decision": "REJECTED",
+    "approved_amount": 0,
+    "primary_reason": "MRI requires pre-authorisation which was not obtained."
+  },
+  {
+    "id": "tc008",
+    "claim_type": "consultation",
+    "amount": 3000,
+    "diagnosis": "multiple conditions",
+    "hospital_name": "City Hospital",
+    "is_network": false,
+    "decision": "MANUAL_REVIEW",
+    "approved_amount": 0,
+    "primary_reason": "Multiple claims submitted on the same date — flagged for fraud review."
+  },
+  {
+    "id": "tc009",
+    "claim_type": "consultation",
+    "amount": 8000,
+    "diagnosis": "weight management",
+    "hospital_name": "Weight Loss Clinic",
+    "is_network": false,
+    "decision": "REJECTED",
+    "approved_amount": 0,
+    "primary_reason": "Weight loss treatments are explicitly excluded under this policy."
+  },
+  {
+    "id": "tc010",
+    "claim_type": "consultation",
+    "amount": 4500,
+    "diagnosis": "fever check-up",
+    "hospital_name": "Apollo Hospitals",
+    "is_network": true,
+    "decision": "APPROVED",
+    "approved_amount": 3600,
+    "primary_reason": "Approved with 10% co-pay and 20% network hospital discount."
+  }
+]
