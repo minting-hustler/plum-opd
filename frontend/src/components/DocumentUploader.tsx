@@ -81,7 +81,7 @@ export default function DocumentUploader({
       setFiles((prev) =>
         prev.map((f) =>
           f.file === file
-            ? { ...f, status: "done", preview: result.extraction_preview as ExtractionPreview }
+            ? { ...f, status: "done", preview: result.extraction_preview }
             : f
         )
       );
@@ -90,7 +90,7 @@ export default function DocumentUploader({
         download_url: result.download_url,
         file_name: file.name,
         doc_type: selectedDocType,
-        extraction_preview: result.extraction_preview as ExtractionPreview,
+        extraction_preview: result.extraction_preview,
       });
     } catch (err) {
       setFiles((prev) =>

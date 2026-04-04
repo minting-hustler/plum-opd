@@ -1,6 +1,12 @@
 import axios from "axios";
 import { auth } from "./firebase";
-import type { Claim, ClaimType, Member, AdjudicationResult } from "../types";
+import type {
+  AdjudicationResult,
+  Claim,
+  ClaimType,
+  ExtractionPreview,
+  Member,
+} from "../types";
 
 const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
@@ -68,7 +74,11 @@ export const uploadDocument = async (
   claimId: string,
   docType: string,
   memberId: string
-): Promise<{ document_id: string; download_url: string; extraction_preview: Record<string, unknown> }> => {
+): Promise<{
+  document_id: string;
+  download_url: string;
+  extraction_preview: ExtractionPreview;
+}> => {
   const form = new FormData();
   form.append("file", file);
   form.append("claim_id", claimId);
