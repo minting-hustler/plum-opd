@@ -13,7 +13,9 @@ import google.generativeai as genai
 logger = logging.getLogger(__name__)
 
 _model: genai.GenerativeModel | None = None
-_embed_model = "models/text-embedding-004"
+_DEFAULT_GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+_DEFAULT_EMBED_MODEL = os.environ.get("GEMINI_EMBED_MODEL", "models/gemini-embedding-001")
+_DEFAULT_EMBED_DIM = int(os.environ.get("GEMINI_EMBED_DIM", "768"))
 
 
 def _get_model() -> genai.GenerativeModel:
@@ -23,7 +25,7 @@ def _get_model() -> genai.GenerativeModel:
         if not api_key:
             raise RuntimeError("GEMINI_API_KEY env var not set")
         genai.configure(api_key=api_key)
-        _model = genai.GenerativeModel("gemini-1.5-flash")
+        _model = genai.GenerativeModel(_DEFAULT_GEMINI_MODEL)
     return _model
 
 
@@ -34,8 +36,11 @@ def embed_text(text: str) -> list[float]:
     if not api_key:
         raise RuntimeError("GEMINI_API_KEY env var not set")
     genai.configure(api_key=api_key)
-    result = genai.embed_content(model=_embed_model, content=text)
-    return result["embedding"]
+    result = genai.embed_content(model=_DEFAULT_EMBED_MODEL, content=text)
+    embedding = result["embedding"]
+    if len(embedding) >= _DEFAULT_EMBED_DIM:
+        return embedding[:_DEFAULT_EMBED_DIM]
+    return embedding
 
 
 # ── Extraction prompts ────────────────────────────────────────────────────────

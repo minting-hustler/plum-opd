@@ -1,8 +1,7 @@
-"""POST /documents/upload — upload file, extract with Gemini, store in Firestore."""
+"""POST /documents/upload — extract uploaded documents and store metadata in Firestore."""
 from __future__ import annotations
 
 import logging
-import uuid
 
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 
@@ -39,15 +38,11 @@ async def upload_document(
     if len(file_bytes) > MAX_FILE_SIZE:
         raise HTTPException(status_code=400, detail="File exceeds 20MB limit")
 
-    # Upload to Firebase Storage
-    file_ext = file.filename.rsplit(".", 1)[-1].lower() if "." in (file.filename or "") else "jpg"
-    storage_path = f"{member_id}/{claim_id}/{uuid.uuid4()}.{file_ext}"
-
-    try:
-        download_url = fb.upload_file(file_bytes, storage_path, file.content_type)
-    except Exception as e:
-        logger.error(f"Firebase Storage upload failed: {e}")
-        raise HTTPException(status_code=500, detail="File upload failed")
+    # We only need the raw bytes long enough to extract structured data.
+    # Keep a Firestore record for adjudication metadata, but do not persist the
+    # original file in object storage.
+    storage_path = ""
+    download_url = ""
 
     # Save document record
     document_id = fb.save_document(
